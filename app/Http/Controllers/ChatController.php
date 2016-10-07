@@ -27,7 +27,14 @@ class ChatController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $receive = explode('"', file_get_contents('php://input'));
+        $message = new Message;
+
+        $message->nickname = $receive[3];
+        $message->message = $receive[7];
+        $message->save();
+
+        return ['success' => true];
     }
 
     /**
@@ -38,6 +45,8 @@ class ChatController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Chat::destroy($id);
+
+        return array('success' => true);
     }
 }

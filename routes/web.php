@@ -11,6 +11,9 @@
 |
 */
 
+Blade::setContentTags('<%', '%>');
+Blade::setEscapedContentTags('<%%', '%%>');
+
 Route::get('/', function () {
     return view('index');
 });
