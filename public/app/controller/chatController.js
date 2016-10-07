@@ -19,6 +19,26 @@ app.controller('ChatController', function($scope, ChatService){
             });
     }
 
+    // Enable pusher logging - don't include this in production
+    //Pusher.logToConsole = true;
+
+    /**
+     * Define pushers info.
+     * @type {Pusher}
+     */
+    var pusher = new Pusher('901189d37b95f33a23fe', {
+        cluster: 'eu',
+        encrypted: true
+    });
+
+    /**
+     * Receive data send from pusher and do something with it.
+     */
+    var channel = pusher.subscribe('chat_channel');
+    channel.bind('push_messages', function () {
+        init();
+    });
+
     $scope.submitChat = function () {
         $scope.loading = true;
 
