@@ -32,6 +32,11 @@
 <script src="<% asset('js/libs/jquery.min.js') %>"></script>
 <script src="<% asset('js/libs/bootstrap.min.js') %>"></script>
 
+<!-- App -->
+<script src="<% asset('app/app.js') %>"></script>
+<script src="<% asset('app/controller/chatController.js') %>"></script>
+<script src="<% asset('app/service/chatService.js') %>"></script>
+
 @yield('script')
 
 </body>
