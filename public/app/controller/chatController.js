@@ -14,7 +14,7 @@ app.controller('ChatController', function($scope, ChatService){
         // Populates view with data from service.
         ChatService.get()
             .success(function (data) {
-                $scope.chat = data;
+                $scope.chats = data;
                 $scope.loading = false;
             });
     }

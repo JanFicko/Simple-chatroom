@@ -10,7 +10,7 @@
 
     <!-- Styles -->
     <link href="<% asset('css/bootstrap.min.css') %>" rel="stylesheet"/>
-    @yield('style')
+@yield('style')
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,10 +27,10 @@
 </div>
 
 <!-- Scripts -->
-<script src="<% asset('js/libs/angular.min.js') %>"></script>
-<script src="<% asset('js/libs/angular-route.min.js') %>"></script>
-<script src="<% asset('js/libs/jquery.min.js') %>"></script>
-<script src="<% asset('js/libs/bootstrap.min.js') %>"></script>
+<script src="<% asset('js/angular.min.js') %>"></script>
+<script src="<% asset('js/angular-route.min.js') %>"></script>
+<script src="<% asset('js/jquery.min.js') %>"></script>
+<script src="<% asset('js/bootstrap.min.js') %>"></script>
 
 <!-- App -->
 <script src="<% asset('app/app.js') %>"></script>

@@ -28,11 +28,11 @@ class ChatController extends Controller
     public function store(Request $request)
     {
         $receive = explode('"', file_get_contents('php://input'));
-        $message = new Message;
+        $chat = new Chat;
 
-        $message->nickname = $receive[3];
-        $message->message = $receive[7];
-        $message->save();
+        $chat->nickname = $receive[3];
+        $chat->message = $receive[7];
+        $chat->save();
 
         return ['success' => true];
     }

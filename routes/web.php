@@ -11,6 +11,10 @@
 |
 */
 
+/**
+ * Because we're only using laravel as API platform,
+ * we're changing the blade's variables.
+ */
 Blade::setContentTags('<%', '%>');
 Blade::setEscapedContentTags('<%%', '%%>');
 
