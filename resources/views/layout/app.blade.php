@@ -31,6 +31,7 @@
 <script src="<% asset('js/angular-route.min.js') %>"></script>
 <script src="<% asset('js/jquery.min.js') %>"></script>
 <script src="<% asset('js/bootstrap.min.js') %>"></script>
+<script src="<% asset('js/pusher.min.js') %>"></script>
 
 <!-- App -->
 <script src="<% asset('app/app.js') %>"></script>

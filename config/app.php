@@ -167,7 +167,7 @@ return [
          * Package Service Providers...
          */
 
-        //
+        Bestmomo\Scafold\ScafoldServiceProvider::class,
 
         /*
          * Application Service Providers...
